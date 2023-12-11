@@ -295,6 +295,21 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.137);
   }
 
+  .passion {
+    width: 100%;
+    height: auto;
+    padding: 100px 26px;
+  }
+
+  .passion-container h3 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300px;
+  }
+
   .nav-list {
     display: none;
     grid-template-rows: repeat(5, 50px);

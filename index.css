@@ -287,6 +287,68 @@ body {
   color: #555555;
 }
 
+
+.passion {
+  width: 100%;
+  height: auto;
+  padding: 100px 26px;
+}
+
+
+
+.passion-container .title{
+  width: 100%;
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.passion-card-container{
+  display: grid;
+  grid-template-columns:repeat(3, minmax(auto,1fr));
+
+}
+
+.passion-cards{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.passion-image{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: var(--bg-icons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.passion-cards .passion-title{
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.passion-cards p{
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: normal;
+  color: var(--navbar-fixed-top);
+  font-weight: 300;
+  padding: 0 45px;
+  flex-wrap: balance;
+}
+
 @media (max-width: 768px) {
   .navbar {
     height: 50px;
@@ -295,20 +357,6 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.137);
   }
 
-  .passion {
-    width: 100%;
-    height: auto;
-    padding: 100px 26px;
-  }
-
-  .passion-container h3 {
-    width: 100%;
-    font-size: 30px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: 300px;
-  }
 
   .nav-list {
     display: none;
@@ -409,4 +457,17 @@ body {
   .footer-cards p {
     font-size: 12px;
   }
+
+  
+}
+
+
+@media (max-width: 990px) {
+  .passion-card-container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+  }
+
 }
